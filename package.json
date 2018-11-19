@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kasunvimarshana/HBS#readme",
   "dependencies": {
+    "cordova-jquery": "^0.1.6",
     "inputmask": "^4.0.3",
     "jquery": "^3.3.1",
     "jquery-autocomplete": "^1.2.8",
