@@ -3,7 +3,7 @@
   "description": "description",
   "main": "index.js",
   "authors": [
-    "kasunvimarshana <kasunvmail@gmail.com>"
+    "kasunvmail@gmail.com"
   ],
   "license": "ISC",
   "homepage": "https://github.com/kasunvimarshana/HBS",
@@ -15,11 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1",
-    "jquery-ui": "^1.12.1",
-    "mustache.js": "mustache#^3.0.0",
-    "jquery-validation": "jquery.validate#^1.13.0",
-    "inputmask": "jquery.inputmask#^4.0.3",
-    "moment": "^2.22.2"
+    "jquery": "^3.3.1"
   }
 }
