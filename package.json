@@ -20,6 +20,7 @@
     "inputmask": "^4.0.3",
     "jquery": "^3.3.1",
     "jquery-autocomplete": "^1.2.8",
+    "jquery-mobile": "^1.5.0-alpha.1",
     "jquery-mobile-min": "^1.1.4",
     "jquery-ui": "^1.12.1",
     "jquery-ui-stable": "^1.12.1-final",
