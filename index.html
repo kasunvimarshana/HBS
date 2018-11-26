@@ -30,63 +30,129 @@
     <body>
         <!-- -->
         
-        <div id="page_1" data-role="page">
-            <!-- img src="#banner_image.png" class="banner"/ -->
-            <div data-role="content">
-                <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
-                    <li><a href="#page_2"> Login </a></li>
-                    <li><a href="#page_3"> Register </a></li>
-                </ul>
-                <div class="ui-grid-a center">
-                    <div class="ui-block-a">
-                        <a href="#page_4" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a href="#page_5" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
-                    </div>
-                </div>
+        <!-- page : home -->
+        <div 
+             id="home"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false"
+             class="bg_img">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-position="fixed"
+			     data-id="page_header"
+                 data-theme="b">
+                <h1>Hire by Swipe</h1>
+                <a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+                class="ui-btn-right"
+				>Info</a>
+            </div>
+            <!-- content -->
+            <!-- data-role="main" -->
+            <div 
+                 role="content" 
+                 class="ui-content"
+                 data-theme="b">
+                <a 
+                   href="#" 
+                   data-role="button">
+                    Log In
+                </a>
+                <a 
+                   href="#" 
+                   data-role="button">
+                    Sign Up
+                </a>
+            </div>
+            <!-- footer -->
+            <div data-role="footer"
+                 data-position="fixed"
+			     data-id="page_footer"
+                 data-theme="b"
+                 data-fullscreen="false">
+                <h4>Page Footer</h4>
             </div>
         </div>
-        
-        <div id="page_2" data-role="page">
-            <header data-role="header" data-position="fixed" data-id="appHeader">
-                <h1> Title </h1>
-                <a href="#page_1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-            </header>
-            <div data-role="content">
-                <div> placeholder </div>
+        <!-- ./page : home -->
+        <!-- page : page 1 -->
+        <div 
+             id="page_1"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false"
+             class="bg_img">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-position="fixed"
+			     data-id="page_header"
+                 data-theme="b">
+                <h1>Hire by Swipe</h1>
+                <a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+                class="ui-btn-right"
+				>Info</a>
+            </div>
+            <!-- content -->
+            <!-- data-role="content" -->
+            <div 
+                 role="main" 
+                 class="ui-content"
+                 data-theme="b">
+                <!-- page content -->
+                <!-- page content -->
+            </div>
+            <!-- footer -->
+            <div data-role="footer"
+                 data-position="fixed"
+			     data-id="page_footer"
+                 data-theme="b"
+                 data-fullscreen="false">
+                <h4>Page Footer</h4>
             </div>
         </div>
-        
-        <div id="page_3" data-role="page">
-            <header data-role="header" data-position="fixed" data-id="appHeader">
-                <h1> Title </h1>
-                <a href="#page_1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-            </header>
-            <div data-role="content">
-                <div> placeholder </div>
+        <!-- ./page : page 1 -->
+        <!-- page : info -->
+        <div 
+             id="info"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-theme="b">
+                <h1>Hire by Swipe</h1>
+            </div>
+            <!-- content -->
+            <!-- data-role="content" -->
+            <div 
+                 role="main" 
+                 class="ui-content"
+                 data-theme="b">
+                <p>
+                    Welcome to Hire By Swipe, the best way to find your dream job! Here at Hire By Swipe, we’re devoted to you, the job seeker. We work to help the individuals that we interact with every day. By helping the job seeker find the career that they dreamed, we are able to improve work environment around the world.
+                </p>
+                <a 
+                   href="#" 
+                   data-role="button" 
+                   data-inline="true" 
+                   data-rel="back" 
+                   data-theme="b">
+                    Close
+                </a>
             </div>
         </div>
-        
-        <div id="page_4" data-role="page">
-            <header data-role="header" data-position="fixed" data-id="appHeader">
-                <h1> Title </h1>
-                <a href="#page_1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-            </header>
-            <div data-role="content">
-                <div> placeholder </div>
-            </div>
-        </div>
-        
-        <div id="page_5" data-role="page">
-            <header data-role="header" data-position="fixed" data-id="appHeader">
-                <h1> Title </h1>
-                <a href="#page_1" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
-            </header>
-            <div data-role="content">
-                <div> placeholder </div>
-            </div>
-        </div>
+        <!-- ./page : info -->
         
         <!-- -->
     </body>
