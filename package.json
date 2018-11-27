@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/kasunvimarshana/HBS#readme",
   "dependencies": {
-    "bower": "^1.8.4",
     "browser-jquery-mobile": "^1.4.1",
     "inputmask": "^4.0.3",
     "jquery": "^1.11.1",
