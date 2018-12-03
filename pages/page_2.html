@@ -41,7 +41,8 @@
              data-theme="b"
              data-title="HBS"
              data-fullscreen="false"
-             class="bg_img">
+             class="bg_img"
+             align="center">
             <!-- header -->
             <div 
                  data-role="header"
@@ -49,9 +50,15 @@
 			     data-id="page_header"
                  data-theme="b">
                     <h1>HBS</h1>
+                    <!-- data-rel="back" -->
                     <a 
-                        href="pages/page_1.html"
-                        rel="external"
+                        href="../index.html"
+				        data-icon="back"
+				        data-iconpos="notext"
+                        class="ui-btn-left">Back</a>
+                    <!-- rel="external" -->
+                    <a 
+                        href="page_1.html"
 				        data-icon="info"
 				        data-iconpos="notext"
 				        data-rel="dialog"
@@ -64,6 +71,75 @@
                  class="ui-content"
                  data-theme="b">
                 <!-- page content -->
+                
+                <div 
+                     class="content-primary">
+                    <!-- ui-body ui-body-b -->
+                    <div 
+                         class="ui-body">
+                        
+                        <h2> Welcome Back ! </h2>
+                        <p><strong> Sign In </strong></p>
+                        
+                        <form autocomplete="off">
+                            <fieldset>
+                            <!-- -->
+                            
+                            <!-- user name -->
+                            <div 
+                                 data-role="fieldcontain" 
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <input 
+                                       type="text" 
+                                       class="" 
+                                       id="user_name" 
+                                       name="user_name" 
+                                       placeholder="Username" 
+                                       autocomplete="off" 
+                                       value=""/>
+                            </div>
+                            <!-- user password -->
+                            <div 
+                                 data-role="fieldcontain" 
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <input 
+                                       type="password" 
+                                       class="" 
+                                       id="user_password" 
+                                       name="user_password" 
+                                       placeholder="Password" 
+                                       autocomplete="off" 
+                                       value=""/>
+                            </div>
+                            <!-- submit -->
+                            <div 
+                                 data-role="fieldcontain" 
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <button 
+                                       type="submit" 
+                                       class="ui-shadow ui-button ui-corner-all" 
+                                       id="submit" 
+                                       name="submit"  
+                                       value="submit">Submit
+                                </button>
+                            </div>
+                            
+                            <!-- ./ -->
+                            </fieldset>
+                        </form>
+                        <a 
+                           href="#" 
+                           class="ui-widget" 
+                           id="forget_password" 
+                           name="forget_password">Forget Password
+                        </a>
+                    </div>
+                    <!-- ./ui-body -->
+                </div>
+                
                 <!-- page content -->
             </div>
             <!-- footer -->
@@ -77,6 +153,6 @@
         </div>
         <!-- ./page : page 1 -->
         
-        <!-- -->
+        <!-- ./ -->
     </body>
 </html>

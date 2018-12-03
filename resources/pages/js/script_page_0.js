@@ -5,7 +5,7 @@ function page_0_center_element(){
         at: "center",
         of: "#home"
     });
-}
+};
 
 $(function(){   //start onload
     "use strict";
@@ -14,12 +14,22 @@ $(function(){   //start onload
         (currentPage.init);
     });*/
     
-    $(window).bind("load", function(){
-        page_0_center_element();
-    });
-    
-    $(window).bind("resize", function(){
-        page_0_center_element();
+    $( window ).bind({
+        load: function() {
+            page_0_center_element();
+        },
+        navigate: function() {
+            page_0_center_element();
+        },
+        resize: function() {
+            page_0_center_element();
+        },
+        pageshow: function() {  // deprecated event
+            page_0_center_element();
+        },
+        pagecontainershow: function() {
+            page_0_center_element();
+        }
     });
     
 }); //end onload
