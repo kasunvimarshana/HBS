@@ -1,22 +1,9 @@
-// function for center element
-function center_element(){
-    $( "#home_content" ).position({
-        my: "center",
-        at: "center",
-        of: "#home"
-    });
-}
+$( document ).bind( "mobileinit", function() {
+    // Make your jQuery Mobile framework configuration changes here!
+    $.mobile.allowCrossDomainPages = true;  // allow cross-domain requests
+});
 
 $(function(){   //start onload
-    
     "use strict";
-    
-    $(window).bind("load", function(){
-        center_element();
-    });
-    
-    $(window).bind("resize", function(){
-        center_element();
-    });
     
 }); //end onload

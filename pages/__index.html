@@ -13,7 +13,6 @@
         <link rel="stylesheet" type="text/css" href="node_modules/inputmask/css/inputmask.css"/>
         <!-- custom styles -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="resources/pages/css/style_page_0.css"/>
         <!-- javascript -->
         <!-- dependencies -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -26,7 +25,6 @@
         <script src="node_modules/jquery.redirect/jquery.redirect.js"></script>
         <!-- custom script -->
         <script src="resources/js/script.js"></script>
-        <script src="resources/pages/js/script_page_0.js"></script>
         <!-- plugin -->
         <script src="phonegap.js"></script>
     </head>
@@ -48,7 +46,7 @@
 			     data-id="page_header"
                  data-theme="b">
                 <h1>HBS</h1>
-                <a href="pages/page_1.html"
+                <a href="#info"
 				data-icon="info"
 				data-iconpos="notext"
 				data-rel="dialog"
@@ -63,7 +61,7 @@
                  class="ui-content"
                  data-theme="b">
                 <a 
-                   href="pages/page_2.html" 
+                   href="#page_1" 
                    data-role="button">
                     Log In
                 </a>
@@ -83,6 +81,81 @@
             </div>
         </div>
         <!-- ./page : home -->
+        <!-- page : page 1 | login -->
+        <div 
+             id="page_1"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false"
+             class="bg_img">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-position="fixed"
+			     data-id="page_header"
+                 data-theme="b">
+                <h1>HBS</h1>
+                <a href="#info"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+                class="ui-btn-right"
+				>Info</a>
+            </div>
+            <!-- content -->
+            <!-- data-role="content" -->
+            <div 
+                 role="main" 
+                 class="ui-content"
+                 data-theme="b">
+                <!-- page content -->
+                <!-- page content -->
+            </div>
+            <!-- footer -->
+            <div data-role="footer"
+                 data-position="fixed"
+			     data-id="page_footer"
+                 data-theme="b"
+                 data-fullscreen="false">
+                <h4>Hire by Swipe</h4>
+            </div>
+        </div>
+        <!-- ./page : page 1 -->
+        <!-- page : info -->
+        <div 
+             id="info"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false"
+             class="bg_img">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-theme="b">
+                <h1>Hire by Swipe</h1>
+            </div>
+            <!-- content -->
+            <!-- data-role="content" -->
+            <div 
+                 role="main" 
+                 class="ui-content"
+                 data-theme="b">
+                <p>
+                    Welcome to Hire By Swipe, the best way to find your dream job! Here at Hire By Swipe, we’re devoted to you, the job seeker. We work to help the individuals that we interact with every day. By helping the job seeker find the career that they dreamed, we are able to improve work environment around the world.
+                </p>
+                <a 
+                   href="#" 
+                   data-role="button" 
+                   data-inline="true" 
+                   data-rel="back" 
+                   data-theme="b">
+                    Close
+                </a>
+            </div>
+        </div>
+        <!-- ./page : info -->
         
         <!-- -->
     </body>
