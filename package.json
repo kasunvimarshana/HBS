@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/kasunvimarshana/HBS#readme",
   "dependencies": {
+    "backbone": "^1.3.3",
     "browser-jquery-mobile": "^1.4.1",
     "free-jqgrid": "^4.15.5",
     "gridstack": "^0.4.0",
+    "handlebars": "^4.0.12",
     "inputmask": "^4.0.3",
     "ion-sound": "^3.0.7",
     "jquery": "^1.11.1",
@@ -40,6 +42,7 @@
     "selectpage": "^2.19.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^4.4.2",
-    "twbs-pagination": "^1.4.1"
+    "twbs-pagination": "^1.4.1",
+    "underscore": "^1.9.1"
   }
 }
