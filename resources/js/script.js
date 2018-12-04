@@ -1,4 +1,4 @@
-$( document ).bind( "mobileinit", function() {
+$( document ).bind( "mobileinit", function() {  // mobile configuration
     "use strict";
     // Make your jQuery Mobile framework configuration changes here!
     $.support.cors = true;  //  $.ajax to load cross-domain pages

@@ -14,6 +14,8 @@ $(function(){   //start onload
         (currentPage.init);
     });*/
     
+    /* center element */
+    page_0_center_element();
     $( window ).bind({
         load: function() {
             page_0_center_element();

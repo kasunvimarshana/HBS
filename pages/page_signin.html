@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="format-detection" content="telephone-no"/>
+        <!-- target-densitydpi=device-dpi -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height"/>
+        <title> HBS </title>
+        <!-- stylesheet -->
+        <!-- dependencies -->
+        <link rel="stylesheet" type="text/css" href="../node_modules/jquery-ui-stable/jquery-ui.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../node_modules/inputmask/css/inputmask.css"/>
+        <!-- custom styles -->
+        <link rel="stylesheet" type="text/css" href="../resources/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../resources/pages/css/page_signin.css"/>
+        <!-- javascript -->
+        <!-- dependencies -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/jquery-ui-stable/jquery-ui.min.js"></script>
+        <script src="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.js"></script>
+        <script src="../node_modules/inputmask/dist/min/inputmask/inputmask.min.js"></script>
+        <script src="../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="../node_modules/moment/min/moment.min.js"></script>
+        <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+        <script src="../node_modules/jquery.redirect/jquery.redirect.js"></script>
+        <!-- custom script -->
+        <script src="../resources/js/script.js"></script>
+        <script src="../resources/pages/js/page_signin.js"></script>
+        <!-- plugin -->
+        <script src="../phonegap.js"></script>
+    </head>
+    <body>
+        <!-- -->
+        
+        <!-- page : page 2 | login -->
+        <!-- data-add-back-btn="true" -->
+        <div 
+             id="page_2"
+             data-role="page"
+             data-theme="b"
+             data-title="HBS"
+             data-fullscreen="false"
+             class="bg_img"
+             align="center">
+            <!-- header -->
+            <div 
+                 data-role="header"
+                 data-position="fixed"
+			     data-id="page_header"
+                 data-theme="b">
+                    <h1>HBS</h1>
+                    <!-- data-rel="back" -->
+                    <a 
+                        href="../index.html"
+                        rel="external"
+                        data-role="button"
+				        data-icon="back"
+				        data-iconpos="notext"
+                        class="ui-btn-left">Back</a>
+                    <!-- rel="external" -->
+                    <a 
+                        href="page_info.html"
+                        data-role="button"
+				        data-icon="info"
+				        data-iconpos="notext"
+				        data-rel="dialog"
+                        class="ui-btn-right">Info</a>
+            </div>
+            <!-- content -->
+            <!-- data-role="content" -->
+            <div 
+                 role="main" 
+                 class="ui-content"
+                 data-theme="b">
+                <!-- page content -->
+                
+                <div 
+                     class="content-primary">
+                    <!-- ui-body ui-body-b -->
+                    <div 
+                         class="ui-body">
+                        
+                        <h2> Welcome Back ! </h2>
+                        <p><strong> Sign In </strong></p>
+                        
+                        <form 
+                              id="form_login" 
+                              name="form_login"
+                              method="post" 
+                              enctype="multipart/form-data" 
+                              autocomplete="off" 
+                              action="#">
+                            <fieldset>
+                            <!-- -->
+                            
+                            <!-- user name -->
+                            <div 
+                                 data-role="fieldcontain"
+                                 data-role="controlgroup"
+                                 data-direction="vertical"
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <input 
+                                       type="text" 
+                                       class="" 
+                                       id="user_name" 
+                                       name="user_name" 
+                                       placeholder="Username" 
+                                       autocomplete="off" 
+                                       value=""/>
+                            </div>
+                            <!-- user password -->
+                            <div 
+                                 data-role="fieldcontain" 
+                                 data-role="controlgroup"
+                                 data-direction="vertical"
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <input 
+                                       type="password" 
+                                       class="" 
+                                       id="user_password" 
+                                       name="user_password" 
+                                       placeholder="Password" 
+                                       autocomplete="off" 
+                                       value=""/>
+                            </div>
+                            <!-- submit -->
+                            <div 
+                                 data-role="fieldcontain" 
+                                 data-role="controlgroup"
+                                 data-direction="vertical"
+                                 class="ui-field-contain">
+                                <!-- label for="" class="">Text</label -->
+                                <button 
+                                       type="submit" 
+                                       class="ui-shadow ui-button ui-corner-all" 
+                                       id="form_login_submit" 
+                                       name="submit"  
+                                       value="submit">Go
+                                </button>
+                            </div>
+                            
+                            <!-- ./ -->
+                            </fieldset>
+                        </form>
+                        <a 
+                           href="page_forgot_password.html" 
+                           data-role=""
+                           data-rel="dialog"
+                           class="" 
+                           id="forgot_password" 
+                           name="forgot_password">Forgot Password</a>
+                    </div>
+                    <!-- ./ui-body -->
+                </div>
+                
+                <!-- page content -->
+            </div>
+            <!-- footer -->
+            <div data-role="footer"
+                 data-position="fixed"
+			     data-id="page_footer"
+                 data-theme="b"
+                 data-fullscreen="false">
+                <h4>Hire by Swipe</h4>
+            </div>
+        </div>
+        <!-- ./page : page * -->
+        
+        <!-- ./ -->
+    </body>
+</html>
