@@ -1,12 +1,3 @@
-// function for center element
-function page_0_center_element(){
-    $( "#home_content" ).position({
-        my: "center",
-        at: "center",
-        of: "#home"
-    });
-};
-
 $(function(){   //start onload
     "use strict";
     
@@ -20,22 +11,21 @@ $(function(){   //start onload
     });*/
     
     /* center element */
-    page_0_center_element();
     $( window ).bind({
         load: function() {
-            page_0_center_element();
+            //function_();
         },
         navigate: function() {
-            page_0_center_element();
+            //function_();
         },
         resize: function() {
-            page_0_center_element();
+            //function_();
         },
         pageshow: function() {  // deprecated event
-            page_0_center_element();
+            //function_();
         },
         pagecontainershow: function() {
-            page_0_center_element();
+            //function_();
         }
     });
     

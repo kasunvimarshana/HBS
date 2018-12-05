@@ -1,0 +1,14 @@
+a, a:link, a:visited, a:hover, a:active{
+    outline: none;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*a{
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+}*/

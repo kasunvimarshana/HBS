@@ -5,11 +5,11 @@ $( document ).bind( "mobileinit", function() {  // mobile configuration
     $.mobile.allowCrossDomainPages = true;  // allow cross-domain requests
     $.mobile.phonegapNavigationEnabled = true;  // This will replace calls to window.history.back
     $.mobile.ignoreContentEnabled = true;   // To activate data-ajax="false"
+    $.mobile.ajaxEnabled = false;   // disabling Ajax navigation completely
 });
 
 $(function(){   //start onload
     "use strict";
-    
     /*$.mobile.changePage( "searchresults.php", {
         type: "post",
         reverse: false,
@@ -24,6 +24,5 @@ $(function(){   //start onload
     
     /*$("#pagePort").load("pages/index.html", function(){
         (currentPage.init);
-    });*/
-    
+    });*/ 
 }); //end onload
