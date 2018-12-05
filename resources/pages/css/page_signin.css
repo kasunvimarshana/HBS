@@ -4,11 +4,6 @@ a, a:link, a:visited, a:hover, a:active{
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
+    /*text-transform: uppercase;*/
     display: inline-block;
 }
-
-/*a{
-  color: red;
-  text-decoration: none;
-  text-transform: uppercase;
-}*/

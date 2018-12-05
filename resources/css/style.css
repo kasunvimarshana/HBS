@@ -1,3 +1,4 @@
+/* center element */
 .center {
     text-align: center;
     margin-left: auto;
@@ -41,3 +42,39 @@
   background-color: #555;
 }
 /* ./custom scrollbar */
+
+/* background image */
+.ui-bg_img{
+    background: transparent url("../images/bg_img.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+/* ui-page inside of ui-bg_img */
+.ui-bg_img .ui-page {
+    /*background: transparent;*/
+    background: rgba(0, 0, 0, 0.5);
+}
+/* ui-content inside of ui-bg_img */
+.ui-bg_img .ui-content{
+    background: transparent;
+}
+
+.backdrop-element-a{
+    /*background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -o-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: contrast(4);
+    -moz-backdrop-filter: contrast(4);
+    -o-backdrop-filter: contrast(4);
+    -ms-backdrop-filter: contrast(4);
+    backdrop-filter: contrast(4);*/ 
+}

@@ -9,9 +9,7 @@
 <title> HBS </title>
 <!-- stylesheet -->
 <!-- dependencies -->
-<!-- link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/ -->
-<!-- link rel="stylesheet" type="text/css" href="node_modules/flexboxgrid/dist/flexboxgrid.min.css"/ -->
-<!-- link rel="stylesheet" type="text/css" href="node_modules/jquery-ui-stable/jquery-ui.min.css"/ -->
+<link rel="stylesheet" type="text/css" href="node_modules/jquery-ui-stable/jquery-ui.min.css"/>
 <link rel="stylesheet" type="text/css" href="node_modules/browser-jquery-mobile/dist/jquery.mobile.min.css"/>
 <link rel="stylesheet" type="text/css" href="node_modules/inputmask/css/inputmask.css"/>
 <!-- custom styles -->
@@ -20,9 +18,9 @@
 <!-- javascript -->
 <!-- dependencies -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery-ui-stable/jquery-ui.min.js"></script>
 <script src="node_modules/browser-jquery-mobile/dist/jquery.mobile.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<!-- script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script -->
 <script src="node_modules/inputmask/dist/min/inputmask/inputmask.min.js"></script>
 <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="node_modules/moment/min/moment.min.js"></script>
@@ -35,7 +33,7 @@
 <!-- plugin -->
 <script src="phonegap.js"></script>
 </head>
-<body>
+<body class="ui-bg_img">
 <!-- -->
     
 <!-- div class="row" -->
@@ -49,7 +47,7 @@
          data-theme="b"
          data-title="HBS"
          data-fullscreen="false"
-         class="row bg_img"
+         class="backdrop-element-a"
          align="center">
         <!-- header -->
         <div 
@@ -70,22 +68,27 @@
         <!-- content -->
         <!-- data-role="main" -->
         <div 
+             role="main"
              id="home_content"
-             role="content" 
+             data-role="content" 
              class="ui-content"
-             class="row bg_img"
              data-theme="b">
-            <div>
+            <div 
+                 class="ui-content ui-corner-all">
                 <a 
                     href="pages/page_signin.html" 
                     rel="external"
-                    data-role="button">
+                    data-role="button"
+                    data-ajax="false"
+                    data-theme="b">
                     Log In
                 </a>
                 <a 
                     href="#" 
                     rel="external"
-                    data-role="button">
+                    data-role="button"
+                    data-ajax="false"
+                    data-theme="b">
                     Sign Up
                 </a>
             </div>
