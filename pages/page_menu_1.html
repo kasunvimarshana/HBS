@@ -1,119 +1,150 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="format-detection" content="telephone-no"/>
-        <!-- target-densitydpi=device-dpi -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height"/>
-        <title> HBS </title>
-        <!-- stylesheet -->
-        <!-- dependencies -->
-        <link rel="stylesheet" type="text/css" href="../node_modules/jquery-ui-stable/jquery-ui.min.css"/>
-        <link rel="stylesheet" type="text/css" href="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.css"/>
-        <link rel="stylesheet" type="text/css" href="../node_modules/inputmask/css/inputmask.css"/>
-        <!-- custom styles -->
-        <link rel="stylesheet" type="text/css" href="../resources/css/style.css"/>
-        <!-- link rel="stylesheet" type="text/css" href="../resources/pages/css/style_page_0.css"/ -->
-        <!-- javascript -->
-        <!-- dependencies -->
-        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../node_modules/jquery-ui-stable/jquery-ui.min.js"></script>
-        <script src="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.js"></script>
-        <script src="../node_modules/inputmask/dist/min/inputmask/inputmask.min.js"></script>
-        <script src="../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="../node_modules/moment/min/moment.min.js"></script>
-        <script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
-        <script src="../node_modules/jquery.redirect/jquery.redirect.js"></script>
-        <!-- custom script -->
-        <script src="../resources/js/script.js"></script>
-        <!-- script src="../resources/pages/js/script_page_0.js"></script -->
-        <!-- plugin -->
-        <script src="../phonegap.js"></script>
-    </head>
-    <body>
-        <!-- -->
-        
-        <!-- page : page 3 | password reset -->
-        <!-- data-add-back-btn="true" -->
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta name="format-detection" content="telephone-no"/>
+<!-- target-densitydpi=device-dpi, shrink-to-fit=no -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, height=device-height, shrink-to-fit=no"/>
+<title> HBS </title>
+<!-- stylesheet -->
+<!-- dependencies -->
+<link rel="stylesheet" type="text/css" href="../node_modules/jquery-ui-stable/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.css"/>
+<link rel="stylesheet" type="text/css" href="../node_modules/inputmask/css/inputmask.css"/>
+<!-- custom styles -->
+<link rel="stylesheet" type="text/css" href="../resources/css/style.css"/>
+<!-- link rel="stylesheet" type="text/css" href="../resources/pages/css/page_menu_1.css"/ -->
+<!-- javascript -->
+<!-- dependencies -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/jquery-ui-stable/jquery-ui.min.js"></script>
+<script src="../node_modules/browser-jquery-mobile/dist/jquery.mobile.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/inputmask/dist/min/inputmask/inputmask.min.js"></script>
+<script src="../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="../node_modules/moment/min/moment.min.js"></script>
+<script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+<script src="../node_modules/jquery.redirect/jquery.redirect.js"></script>
+<script src="../node_modules/purl/dist/purl.min.js"></script>
+<!-- custom script -->
+<script src="../resources/js/script.js"></script>
+<!-- script src="../resources/pages/js/page_menu_1.js"></script -->
+<!-- plugin -->
+<script src="../phonegap.js"></script>
+</head>
+<body class="ui-bg_img">
+<!-- -->
+    
+<!-- div class="row" -->
+<!-- body-content -->
+    
+    <!-- page : page * | menu_1 -->
+    <!-- data-add-back-btn="true" -->
+    <div 
+         id="page_menu_1"
+         data-role="page"
+         data-theme="b"
+         data-title="HBS"
+         data-fullscreen="false"
+         class="backdrop-element-a"
+         align="center">
+        <!-- header -->
         <div 
-             id="page_3"
-             data-role="page"
-             data-theme="b"
-             data-title="HBS"
-             data-fullscreen="false"
-             class="bg_img"
-             align="center">
-            <!-- header -->
+             data-role="header"
+             data-position="fixed"
+             data-id="page_header"
+             data-theme="b">
+                <h1>HBS</h1>
+                <!-- data-rel="back" -->
+                <a 
+                    href="../index.html"
+                    rel="external"
+                    data-role="button"
+                    data-ajax="false"
+                    data-icon="back"
+                    data-iconpos="notext"
+                    class="ui-btn-left">Back</a>
+                <!-- rel="external" -->
+                <a 
+                    href="page_info.html"
+                    data-role="button"
+                    data-icon="info"
+                    data-iconpos="notext"
+                    data-rel="dialog"
+                    class="ui-btn-right">Info</a>
+        </div>
+        <!-- content -->
+        <!-- data-role="main" -->
+        <div 
+             role="main"
+             id="page_menu_1_content"
+             data-role="content" 
+             class="ui-content"
+             data-theme="b">
+            <!-- class="ui-content" -->
             <div 
-                 data-role="header"
-                 data-theme="b">
-                <h1>Reset Password</h1>
-            </div>
-            <!-- content -->
-            <!-- data-role="content" -->
-            <div 
-                 role="main" 
-                 class="ui-content"
-                 data-theme="b">
+                 class="ui-content ui-corner-all">
                 <!-- page content -->
-                <div 
-                    class="content-primary">
-                    <!-- ui-body ui-body-b -->
-                    <div 
-                         class="ui-body">
-                        <form 
-                              id="form_reset_password" 
-                              name="form_reset_password"
-                              method="post" 
-                              enctype="multipart/form-data" 
-                              autocomplete="off" 
-                              action="javascript:form_reset_password_action('#form_reset_password');">
-                            <fieldset>
-                            <!-- -->
-                            
-                            <!-- user email -->
-                            <div 
-                                 data-role="fieldcontain"
-                                 data-role="controlgroup"
-                                 data-direction="vertical"
-                                 class="ui-field-contain">
-                                <!-- label for="" class="">Text</label -->
-                                <input 
-                                       type="email" 
-                                       class="" 
-                                       id="email" 
-                                       name="email" 
-                                       placeholder="email" 
-                                       autocomplete="off" 
-                                       value=""/>
+                
+                <!-- ************************* -->
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <a 
+                           href="page_info.html" 
+                           class="hyperlink_default_1 ui-content">
+                            <div class="ui-body ui-body-a ui-corner-all">
+                                <h2> Job Seeker </h2>
+                                <p> The start of your dream career is a click away </p>
                             </div>
-                            <!-- submit -->
-                            <div 
-                                 data-role="fieldcontain" 
-                                 data-role="controlgroup"
-                                 data-direction="vertical"
-                                 class="ui-field-contain">
-                                <!-- label for="" class="">Text</label -->
-                                <button 
-                                       type="submit" 
-                                       class="ui-shadow ui-button ui-corner-all" 
-                                       id="form_reset_password_submit" 
-                                       name="submit"  
-                                       value="submit">Send Recent Link
-                                </button>
-                            </div>
-                            
-                            <!-- ./ -->
-                            </fieldset>
-                        </form>
+                        </a>
                     </div>
-                    <!-- ./ui-body -->
                 </div>
+                
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <a 
+                           href="page_info.html" 
+                           class="hyperlink_default_1 ui-content">
+                            <div class="ui-body ui-body-a ui-corner-all">
+                                <h2> Employer </h2>
+                                <p> Find the next employee to make your staff soar </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <a 
+                           href="page_info.html" 
+                           class="hyperlink_default_1 ui-content">
+                            <div class="ui-body ui-body-a ui-corner-all">
+                                <h2> Recruiter </h2>
+                                <p> Receive a list of potential candidates to fill any number of positions </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- ************************* -->
+                
                 <!-- ./page content -->
             </div>
         </div>
-        <!-- ./page : * -->
-        
-        <!-- ./ -->
-    </body>
+        <!-- footer -->
+        <div data-role="footer"
+             data-position="fixed"
+             data-id="page_footer"
+             data-theme="b"
+             data-fullscreen="false">
+            <h4>Hire by Swipe</h4>
+        </div>
+    </div>
+    <!-- ./page : * -->
+    
+<!-- ./body content -->
+<!-- /div --> 
+    
+<!-- ./ -->
+</body>
 </html>

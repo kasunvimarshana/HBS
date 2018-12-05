@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="../node_modules/inputmask/css/inputmask.css"/>
 <!-- custom styles -->
 <link rel="stylesheet" type="text/css" href="../resources/css/style.css"/>
-<link rel="stylesheet" type="text/css" href="../resources/pages/css/page_signin.css"/>
+<!-- link rel="stylesheet" type="text/css" href="../resources/pages/css/page_signin.css"/ -->
 <!-- javascript -->
 <!-- dependencies -->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
@@ -29,7 +29,7 @@
 <script src="../node_modules/purl/dist/purl.min.js"></script>
 <!-- custom script -->
 <script src="../resources/js/script.js"></script>
-<script src="../resources/pages/js/page_signin.js"></script>
+<!-- script src="../resources/pages/js/page_signin.js"></script -->
 <!-- plugin -->
 <script src="../phonegap.js"></script>
 </head>
@@ -99,19 +99,19 @@
                       method="post" 
                       enctype="multipart/form-data" 
                       autocomplete="off" 
-                      action="#">
+                      action="page_menu_1.html">
                 <div data-role="content">
-                    <!-- user name -->
+                    <!-- user email -->
                     <fieldset>
                         <div data-role="fieldcontainer">
-                            <label data-theme="b" for="var_user_name">Username</label>
+                            <!-- label data-theme="b" for="var_user_email">email</label -->
                             <input 
                                    data-theme="b" 
                                    type="text" 
                                    class="" 
-                                   id="var_user_name" 
-                                   name="var_user_name"  
-                                   placeholder="Username" 
+                                   id="var_user_email" 
+                                   name="var_user_email"  
+                                   placeholder="email" 
                                    autocomplete="off" 
                                    value=""/>
                         </div>
@@ -119,14 +119,14 @@
                     <!-- user password -->
                     <fieldset>
                         <div data-role="fieldcontainer">
-                            <label data-theme="b" for="var_user_password">Password</label>
+                            <!-- label data-theme="b" for="var_user_password">Password</label -->
                             <input 
                                    data-theme="b" 
                                    type="text" 
                                    class="" 
                                    id="var_user_password" 
                                    name="var_user_password"  
-                                   placeholder="Password" 
+                                   placeholder="password" 
                                    autocomplete="off" 
                                    value=""/>
                         </div>
@@ -152,7 +152,7 @@
                    href="#page_3"
                    data-role=""
                    data-rel="dialog"
-                   class="">Forgot Password</a>
+                   class="hyperlink_default_1">Forgot Password</a>
                 <!-- ************************* -->
                 
                 <!-- ./page content -->
@@ -211,7 +211,7 @@
                     <!-- user email -->
                     <fieldset>
                         <div data-role="fieldcontainer">
-                            <label data-theme="b" for="var_user_name">email</label>
+                            <!-- label data-theme="b" for="var_user_email">email</label -->
                             <input 
                                    data-theme="b" 
                                    type="email" 
