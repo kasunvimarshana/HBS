@@ -62,7 +62,7 @@
                     rel="external"
                     data-role="button"
                     data-ajax="false"
-                    data-icon="back"
+                    data-icon="home"
                     data-iconpos="notext"
                     class="ui-btn-left">Back</a>
                 <!-- rel="external" -->
@@ -88,71 +88,77 @@
                 <!-- page content -->
                 
                 <!-- ************************* -->
-                <div>
-                    <h2> Welcome Back ! </h2>
-                    <p><strong> Sign In </strong></p>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <div class="ui-body ui-body-a ui-corner-all">
+                            <div>
+                                <h2> Welcome Back ! </h2>
+                                <p><strong> Sign In </strong></p>
+                            </div>
+                            <form 
+                                  id="form_signin" 
+                                  name="form_signin" 
+                                  data-ajax="false" 
+                                  method="post" 
+                                  enctype="multipart/form-data" 
+                                  autocomplete="off" 
+                                  action="page_menu_1.html">
+                            <div data-role="content">
+                                <!-- user email -->
+                                <fieldset>
+                                    <div data-role="fieldcontainer">
+                                        <!-- label data-theme="b" for="var_user_email">email</label -->
+                                        <input 
+                                               data-theme="b" 
+                                               type="text" 
+                                               class="" 
+                                               id="var_user_email" 
+                                               name="var_user_email"  
+                                               placeholder="email" 
+                                               autocomplete="off" 
+                                               value=""/>
+                                    </div>
+                                </fieldset>
+                                <!-- user password -->
+                                <fieldset>
+                                    <div data-role="fieldcontainer">
+                                        <!-- label data-theme="b" for="var_user_password">Password</label -->
+                                        <input 
+                                               data-theme="b" 
+                                               type="text" 
+                                               class="" 
+                                               id="var_user_password" 
+                                               name="var_user_password"  
+                                               placeholder="password" 
+                                               autocomplete="off" 
+                                               value=""/>
+                                    </div>
+                                </fieldset>
+                                <!-- submit -->
+                                <fieldset>
+                                    <div data-role="fieldcontainer">
+                                        <!-- label data-theme="b" for="submit">Submit</label -->
+                                        <button 
+                                               data-theme="b" 
+                                               type="submit" 
+                                               class="" 
+                                               id="submit" 
+                                               name="submit" 
+                                               value="submit">Go</button>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            </form>
+                            <a 
+                               id="forgot_password"
+                               name="forgot_password"
+                               href="#page_3"
+                               data-role=""
+                               data-rel="dialog"
+                               class="hyperlink_default_1">Forgot Password</a>
+                        </div>
+                    </div>
                 </div>
-                <form 
-                      id="form_signin" 
-                      name="form_signin" 
-                      data-ajax="false" 
-                      method="post" 
-                      enctype="multipart/form-data" 
-                      autocomplete="off" 
-                      action="page_menu_1.html">
-                <div data-role="content">
-                    <!-- user email -->
-                    <fieldset>
-                        <div data-role="fieldcontainer">
-                            <!-- label data-theme="b" for="var_user_email">email</label -->
-                            <input 
-                                   data-theme="b" 
-                                   type="text" 
-                                   class="" 
-                                   id="var_user_email" 
-                                   name="var_user_email"  
-                                   placeholder="email" 
-                                   autocomplete="off" 
-                                   value=""/>
-                        </div>
-                    </fieldset>
-                    <!-- user password -->
-                    <fieldset>
-                        <div data-role="fieldcontainer">
-                            <!-- label data-theme="b" for="var_user_password">Password</label -->
-                            <input 
-                                   data-theme="b" 
-                                   type="text" 
-                                   class="" 
-                                   id="var_user_password" 
-                                   name="var_user_password"  
-                                   placeholder="password" 
-                                   autocomplete="off" 
-                                   value=""/>
-                        </div>
-                    </fieldset>
-                    <!-- submit -->
-                    <fieldset>
-                        <div data-role="fieldcontainer">
-                            <!-- label data-theme="b" for="submit">Submit</label -->
-                            <button 
-                                   data-theme="b" 
-                                   type="submit" 
-                                   class="" 
-                                   id="submit" 
-                                   name="submit" 
-                                   value="submit">Go</button>
-                        </div>
-                    </fieldset>
-                </div>
-                </form>
-                <a 
-                   id="forgot_password"
-                   name="forgot_password"
-                   href="#page_3"
-                   data-role=""
-                   data-rel="dialog"
-                   class="hyperlink_default_1">Forgot Password</a>
                 <!-- ************************* -->
                 
                 <!-- ./page content -->
@@ -187,11 +193,13 @@
         </div>
         <!-- content -->
         <!-- data-role="main" -->
+        <!-- data-role="content" -->
+        <!-- class="ui-content" -->
         <div 
              role="main"
              id="page_2_content"
-             data-role="content" 
-             class="ui-content"
+             data-role="main" 
+             class="ui-body ui-body-a ui-corner-all"
              data-theme="b">
             <!-- class="ui-content" -->
             <div 
@@ -199,45 +207,51 @@
                 <!-- page content -->
                 
                 <!-- ************************* -->
-                <form 
-                      id="form_forgot_password" 
-                      name="form_forgot_password" 
-                      data-ajax="false" 
-                      method="post" 
-                      enctype="multipart/form-data" 
-                      autocomplete="off" 
-                      action="#">
-                <div data-role="content">
-                    <!-- user email -->
-                    <fieldset>
-                        <div data-role="fieldcontainer">
-                            <!-- label data-theme="b" for="var_user_email">email</label -->
-                            <input 
-                                   data-theme="b" 
-                                   type="email" 
-                                   class="" 
-                                   id="var_user_email" 
-                                   name="var_user_email"  
-                                   placeholder="email" 
-                                   autocomplete="off" 
-                                   value=""/>
+                <div class="ui-grid-solo">
+                    <div class="ui-block-a">
+                        <div class="ui-body ui-body-a ui-corner-all">
+                            <form 
+                                  id="form_forgot_password" 
+                                  name="form_forgot_password" 
+                                  data-ajax="false" 
+                                  method="post" 
+                                  enctype="multipart/form-data" 
+                                  autocomplete="off" 
+                                  action="#">
+                            <div data-role="content">
+                                <!-- user email -->
+                                <fieldset>
+                                    <div data-role="fieldcontainer">
+                                        <!-- label data-theme="b" for="var_user_email">email</label -->
+                                        <input 
+                                               data-theme="b" 
+                                               type="email" 
+                                               class="" 
+                                               id="var_user_email" 
+                                               name="var_user_email"  
+                                               placeholder="email" 
+                                               autocomplete="off" 
+                                               value=""/>
+                                    </div>
+                                </fieldset>
+                                <!-- submit -->
+                                <fieldset>
+                                    <div data-role="fieldcontainer">
+                                        <!-- label data-theme="b" for="submit">Submit</label -->
+                                        <button 
+                                               data-theme="b" 
+                                               type="submit" 
+                                               class="" 
+                                               id="submit" 
+                                               name="submit" 
+                                               value="submit">Send Recent Link</button>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            </form>
                         </div>
-                    </fieldset>
-                    <!-- submit -->
-                    <fieldset>
-                        <div data-role="fieldcontainer">
-                            <!-- label data-theme="b" for="submit">Submit</label -->
-                            <button 
-                                   data-theme="b" 
-                                   type="submit" 
-                                   class="" 
-                                   id="submit" 
-                                   name="submit" 
-                                   value="submit">Send Recent Link</button>
-                        </div>
-                    </fieldset>
+                    </div>
                 </div>
-                </form>
                 <!-- ************************* -->
                 
                 <!-- ./page content -->

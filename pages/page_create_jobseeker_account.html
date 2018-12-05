@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="../node_modules/inputmask/css/inputmask.css"/>
 <!-- custom styles -->
 <link rel="stylesheet" type="text/css" href="../resources/css/style.css"/>
-<!-- link rel="stylesheet" type="text/css" href="../resources/pages/css/page_info.css"/ -->
+<!-- link rel="stylesheet" type="text/css" href="../resources/pages/css/style_page_0.css"/ -->
 <!-- javascript -->
 <!-- dependencies -->
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
@@ -29,7 +29,7 @@
 <script src="../node_modules/purl/dist/purl.min.js"></script>
 <!-- custom script -->
 <script src="../resources/js/script.js"></script>
-<!-- script src="../resources/pages/js/page_info.js"></script -->
+<!-- script src="../resources/pages/js/script_page_0.js"></script -->
 <!-- plugin -->
 <script src="../phonegap.js"></script>
 </head>
@@ -39,10 +39,10 @@
 <!-- div class="row" -->
 <!-- body-content -->
     
-    <!-- page : page 0 | info -->
+    <!-- page : page * | * -->
     <!-- data-add-back-btn="true" -->
     <div 
-         id="info"
+         id="page_0"
          data-role="page"
          data-theme="b"
          data-title="HBS"
@@ -52,18 +52,35 @@
         <!-- header -->
         <div 
              data-role="header"
+             data-position="fixed"
+             data-id="page_header"
              data-theme="b">
-                <h1>Hire by Swipe</h1>
+                <h1>HBS</h1>
+                <!-- data-rel="back" -->
+                <a 
+                    href="../index.html"
+                    rel="external"
+                    data-role="button"
+                    data-ajax="false"
+                    data-icon="home"
+                    data-iconpos="notext"
+                    class="ui-btn-left">Back</a>
+                <!-- rel="external" -->
+                <a 
+                    href="page_info.html"
+                    data-role="button"
+                    data-icon="info"
+                    data-iconpos="notext"
+                    data-rel="dialog"
+                    class="ui-btn-right">Info</a>
         </div>
         <!-- content -->
         <!-- data-role="main" -->
-        <!-- data-role="content" -->
-        <!-- class="ui-content" -->
         <div 
              role="main"
-             id="page_info_content"
-             data-role="main" 
-             class="ui-body ui-body-a ui-corner-all"
+             id="page_0_content"
+             data-role="content" 
+             class="ui-content"
              data-theme="b">
             <!-- class="ui-content" -->
             <div 
@@ -74,18 +91,18 @@
                 <div class="ui-grid-solo">
                     <div class="ui-block-a">
                         <div class="ui-body ui-body-a ui-corner-all">
+                            <h2> Create a Job Seeker Account </h2>
                             <p>
-                                Welcome to Hire By Swipe, the best way to find your dream job! Here at Hire By Swipe, we’re devoted to you, the job seeker. We work to help the individuals that we interact with every day. By helping the job seeker find the career that they dreamed, we are able to improve work environment around the world.
+                                Welcome to Hire By Swipe, the new way to find your dream job! Here at Hire By Swipe, we’re devoted to the job seeker. We work to help the individuals that we interact with every day. By helping the job seeker find the career that they dreamed, we are able to improve work environment around the world.
                             </p>
-                            <a 
-                               id="close_page_info"
-                               name="close_page_info"
-                               href="#"
-                               data-role="button"
-                               data-inline="true"
-                               data-rel="back"
-                               class=""
-                               data-theme="b">Close</a>
+                            <div>
+                                <a 
+                                    href="#" 
+                                    rel="external"
+                                    data-role="button"
+                                    data-ajax="false"
+                                    data-theme="b"> Next </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,8 +113,11 @@
         </div>
         <!-- footer -->
         <div data-role="footer"
-             data-theme="b">
-            <!-- h4>Hire by Swipe</h4 -->
+             data-position="fixed"
+             data-id="page_footer"
+             data-theme="b"
+             data-fullscreen="false">
+            <h4>Hire by Swipe</h4>
         </div>
     </div>
     <!-- ./page : * -->
