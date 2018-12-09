@@ -6,7 +6,7 @@ $( document ).bind( "mobileinit", function() {  // mobile configuration
     $.mobile.phonegapNavigationEnabled = true;  // This will replace calls to window.history.back
     $.mobile.ignoreContentEnabled = true;   // To activate data-ajax="false"
     //$.mobile.ajaxEnabled = false;   // disabling Ajax navigation completely
-    //$.mobile.page.prototype.options.degradeInputs.date = true;  // reset type=date inputs to text
+    $.mobile.page.prototype.options.degradeInputs.date = true;  // reset type=date inputs to text
 });
 
 $(function(){   //start onload
