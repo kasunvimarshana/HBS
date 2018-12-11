@@ -60,7 +60,7 @@
     height: 100%;
     background: transparent url("../images/bg_img.png") !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    /*background-repeat: no-repeat !important;*/
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
