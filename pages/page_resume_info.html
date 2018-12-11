@@ -36,7 +36,7 @@
 <script data-main="" src="../resources/lib/bower_components/jquery-ui/ui/jquery.ui.datepicker.js"></script>
 <!-- custom script -->
 <script data-main="" src="../resources/js/script.js"></script>
-<script data-main="" src="../resources/pages/js/page_add_personal_info.js"></script>
+<script data-main="" src="../resources/pages/js/page_resume_info.js"></script>
 <!-- plugin -->
 <script src="../phonegap.js"></script>
 </head>
@@ -99,7 +99,7 @@
                     <div class="ui-block-a">
                         <div class="ui-body ui-body-a ui-corner-all">
                             <div>
-                                <h2> Personal Info </h2>
+                                <h2> Resume Info </h2>
                             </div>
                             <form 
                                   id="form_add_personal_info" 
@@ -108,109 +108,85 @@
                                   method="post" 
                                   enctype="multipart/form-data" 
                                   autocomplete="off" 
-                                  action="./page_resume_info.html">
+                                  action="./page_references.html">
                             <div data-role="content">
-                                <!-- first name -->
+                                <!-- skills -->
                                 <div class="ui-field-contain">
                                 <fieldset>
                                     <div data-role="fieldcontainer">
                                         <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               type="text" 
-                                               class="" 
-                                               id="var_first_name" 
-                                               name="var_first_name"  
-                                               placeholder="first name" 
-                                               autocomplete="off" 
-                                               value=""/>
+                                        <textarea 
+                                                  data-theme="b" 
+                                                  class="" 
+                                                  id="var_skill" 
+                                                  name="var_skill"  
+                                                  placeholder="skills" 
+                                                  autocomplete="off" 
+                                                  rows="10"></textarea>
                                     </div>
                                 </fieldset>
                                 </div>
-                                <!-- last name -->
+                                <!-- languages -->
                                 <div class="ui-field-contain">
                                 <fieldset>
                                     <div data-role="fieldcontainer">
                                         <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               type="text" 
-                                               class="" 
-                                               id="var_last_name" 
-                                               name="var_last_name"  
-                                               placeholder="last name" 
-                                               autocomplete="off" 
-                                               value=""/>
+                                        <textarea 
+                                                  data-theme="b" 
+                                                  class="" 
+                                                  id="var_language" 
+                                                  name="var_language"  
+                                                  placeholder="languages" 
+                                                  autocomplete="off" 
+                                                  rows="10"></textarea>
                                     </div>
                                 </fieldset>
                                 </div>
-                                <!-- user email -->
+                                <!-- organizations -->
                                 <div class="ui-field-contain">
                                 <fieldset>
                                     <div data-role="fieldcontainer">
                                         <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               type="email" 
-                                               class="" 
-                                               id="var_user_email" 
-                                               name="var_user_email"  
-                                               placeholder="email" 
-                                               autocomplete="off" 
-                                               value=""/>
+                                        <textarea 
+                                                  data-theme="b" 
+                                                  class="" 
+                                                  id="var_organization" 
+                                                  name="var_organization"  
+                                                  placeholder="organizations" 
+                                                  autocomplete="off" 
+                                                  rows="10"></textarea>
                                     </div>
                                 </fieldset>
                                 </div>
-                                <!-- user password -->
+                                <!-- summary -->
                                 <div class="ui-field-contain">
                                 <fieldset>
                                     <div data-role="fieldcontainer">
                                         <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               type="password" 
-                                               class="" 
-                                               id="var_user_password" 
-                                               name="var_user_password"  
-                                               placeholder="password" 
-                                               autocomplete="off" 
-                                               value=""/>
+                                        <textarea 
+                                                  data-theme="b" 
+                                                  class="" 
+                                                  id="var_summary" 
+                                                  name="var_summary"  
+                                                  placeholder="summary" 
+                                                  autocomplete="off" 
+                                                  rows="10"></textarea>
                                     </div>
                                 </fieldset>
                                 </div>
-                                <!-- phone -->
+                                <!-- education -->
                                 <div class="ui-field-contain">
                                 <fieldset>
                                     <div data-role="fieldcontainer">
                                         <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               type="text" 
-                                               class="" 
-                                               id="var_phone" 
-                                               name="var_phone"  
-                                               placeholder="phone" 
-                                               autocomplete="off" 
-                                               value=""/>
-                                    </div>
-                                </fieldset>
-                                </div>
-                                <!-- birthday -->
-                                <div class="ui-field-contain">
-                                <fieldset>
-                                    <div data-role="fieldcontainer">
-                                        <!-- label data-theme="b" for="id">text</label -->
-                                        <input 
-                                               data-theme="b" 
-                                               data-role="date" 
-                                               data-inline="true" 
-                                               type="text" 
-                                               class="" 
-                                               id="var_birthday" 
-                                               name="var_birthday"  
-                                               placeholder="birthday" 
-                                               autocomplete="off" 
-                                               value=""/>
+                                        <textarea 
+                                                  data-theme="b" 
+                                                  class="" 
+                                                  id="var_education" 
+                                                  name="var_education"  
+                                                  placeholder="education" 
+                                                  autocomplete="off" 
+                                                  rows="10"></textarea>
                                     </div>
                                 </fieldset>
                                 </div>
