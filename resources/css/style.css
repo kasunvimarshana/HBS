@@ -1,3 +1,6 @@
+@import url(style-acc.css);
+@import url(style-acc-kasun.css);
+
 body{
     font-family: 'Oswald', sans-serif; 
     background-image: url("../images/background.jpg");
@@ -14,36 +17,36 @@ body .main-bg{
 ::-webkit-scrollbar
 {
   width: 5px;
-  background-color: #F5F5F5;
+  background-color: rgba(255, 255, 255, 0);
 }
 ::-webkit-scrollbar-track
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
   border-radius: 20px;
-  background-color: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
 ::-webkit-scrollbar:horizontal
 {
   width: 0px;
   height: 5px;
-  background-color: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-track:horizontal
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
   border-radius: 20px;
-  background-color: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-thumb:horizontal
 {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
 /* ./custom scrollbar */
@@ -109,6 +112,18 @@ body .main-bg{
     font-size: 20px;
     color: #fff;
 }
+.form-property .half{
+    display: unset;
+    width: 48%;
+    margin-bottom: 20px;
+}
+.half-left{
+    float: left;
+    margin-right: 2%;
+}
+.half-right{
+    margin-left: 2%;
+}
 .form-property textarea{
     font-size: 15px;
     height: 165px;
@@ -139,7 +154,7 @@ body .main-bg{
 }
 .mid-box{
     padding: 15px;
-    width: 31%;
+    /*width: 31%;*/
 	background-color: #fff;
 	-webkit-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
@@ -276,7 +291,7 @@ input:checked + .slider:before {
     color: #fff;
     text-transform: capitalize;
     display: inline-block;
-    min-width: 273px;
+    min-width: 240px;
 }
 .white-tog-area{
     background-color: #fff;

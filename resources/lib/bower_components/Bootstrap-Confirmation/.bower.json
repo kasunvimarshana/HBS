@@ -1,0 +1,28 @@
+{
+  "name": "Bootstrap-Confirmation",
+  "homepage": "https://github.com/open-node/Bootstrap-Confirmation",
+  "authors": [
+    "13740080@qq.com"
+  ],
+  "description": "Javascript plug-in for Twitter bootstrap. Require JQuery and Bootstrap-Tooptip.js to run. This is in Beta state",
+  "main": "bootstrap-confirmation.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "confirm",
+    "bootstrap",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "_release": "255d4ce23f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "255d4ce23fca83da7666993d4581090d35f1af28"
+  },
+  "_source": "https://github.com/open-node/Bootstrap-Confirmation.git",
+  "_target": "*",
+  "_originalSource": "Bootstrap-Confirmation",
+  "_direct": true
+}
