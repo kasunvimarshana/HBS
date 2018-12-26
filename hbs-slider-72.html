@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="./resources/lib/bower_components/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./resources/lib/bower_components/components-bootstrap/css/bootstrap.min.css" />
     <!-- link rel="stylesheet" type="text/css" href="./resources/lib/bower_components/inputmask/css/inputmask.css"/ -->
-    <link rel="stylesheet" type="text/css" href="./resources/lib/bower_components/fullcalendar/dist/fullcalendar.min.css" />
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
     <!-- javascript -->
@@ -28,21 +27,15 @@
     <!-- script data-main="" src="./resources/lib/bower_components/popper.js/dist/umd/popper.min.js"></script -->
     <!-- script data-main="" src="./resources/lib/bower_components/inputmask/dist/min/inputmask/inputmask.min.js"></script -->
     <!-- script data-main="" src="./resources/lib/bower_components/jquery-validation/dist/jquery.validate.min.js"></script -->
-    <script data-main="" src="./resources/lib/bower_components/moment/min/moment.min.js"></script>
+    <!-- script data-main="" src="./resources/lib/bower_components/moment/min/moment.min.js"></script -->
     <!-- script data-main="" src="./resources/lib/bower_components/handlebars/handlebars.min.js"></script -->
     <!-- script data-main="" src="./resources/lib/bower_components/jquery.redirect/jquery.redirect.js"></script -->
     <!-- script data-main="" src="./resources/lib/bower_components/purl/purl.js"></script -->
     <!-- other dependencies -->
-    <script type="text/javascript" src="./resources/lib/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
     <!-- custom script -->
-    <script type="text/javascript" src="./resources/js/script.js"></script>
+    <script type="text/javascript" data-main="" src="./resources/js/script.js"></script>
     <!-- plugin -->
-    <script src="./phonegap.js"></script>
-    <script>
-        $(function () {
-            $("#calendar").fullCalendar({});
-        });
-    </script>
+    <script data-main="" src="./phonegap.js"></script>
 </head>
 
 <body>
@@ -73,68 +66,68 @@
             </div>
             <div class="body-full">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="text-center h1-style-1">Calender</h1>
+                    <h1 class="text-center h1-style-1">Additional Candidate Info</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="col">
-                            <h2 class="text-center">Upcoming Events</h2>
+                            <h2 class="text-center">Summary</h2>
                             <hr />
                         </div>
-                        <div class="col list-container-1">
-                            <!-- lits -->
-                            <!-- class="panel" -->
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <h2 class="list-group-item-heading">Team Meating</h2>
-                                    <p class="list-group-item-text">8/25 @ 10 AM - Delta Office Orlando
-                                    </p>
-                                </a>
-                            </div>
-                            <!-- ./lits -->
-                            <!-- lits -->
-                            <!-- class="panel" -->
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <h2 class="list-group-item-heading">Team Meating</h2>
-                                    <p class="list-group-item-text">8/25 @ 10 AM - Delta Office Orlando
-                                    </p>
-                                </a>
-                            </div>
-                            <!-- ./lits -->
+                        <div class="col">
+                            <h3 class="text-center">
+                                I am currently looking for a position working with IT. With my previous experience, I
+                                feel that I would be an asset to any department. I have management experience and have
+                                worked in a team and individual setting.
+
+                            </h3>
                         </div>
-                        <div class="col input-container-1">
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="TITLE" />
+                        <div class="col">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 btn-area">
+                                <button type="button" class="btn btn-info btn-lg btn-block btn-1">MESSAGE</button>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="DESCRIPTION" />
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 btn-area">
+                                <button type="button" class="btn btn-danger btn-lg btn-block btn-1">SAVE</button>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="DATE" />
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 btn-area">
+                                <button type="button" class="btn btn-info btn-lg btn-block btn-1">SHARE</button>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="START TIME" />
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="ADD PERSON" />
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 form-property">
-                                <input type="text" placeholder="END TIME" />
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2"></div>
-                                <div class="col-md-8 form-property white-area remove-white">
-                                    <button type="button" class="btn btn-danger btn-lg btn-block btn-1">CREATE NEW
-                                        EVENT</button>
-                                </div>
-                                <div class="col-sm-2"></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 btn-area">
+                                <button type="button" class="btn btn-danger btn-lg btn-block btn-1">UNINTERESTED</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="col">
-                            <div id="calendar"></div>
+                            <h2 class="text-center">Summary</h2>
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <a href="">
+                                <div class="col-md-12 col-sm-12 col-xs-12 under-border">
+                                    <p><i class="fa fa-circle" aria-hidden="true"></i>Summary</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="col-md-12 col-sm-12 col-xs-12 under-border">
+                                    <p><i class="fa fa-circle" aria-hidden="true"></i>Work History</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="col-md-12 col-sm-12 col-xs-12 under-border">
+                                    <p><i class="fa fa-circle" aria-hidden="true"></i>Education</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="col-md-12 col-sm-12 col-xs-12 under-border">
+                                    <p><i class="fa fa-circle" aria-hidden="true"></i>Skills</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="col-md-12 col-sm-12 col-xs-12 under-border">
+                                    <p><i class="fa fa-circle" aria-hidden="true"></i>Languages</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

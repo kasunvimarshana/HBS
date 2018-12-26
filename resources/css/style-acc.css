@@ -13,6 +13,9 @@
       transition: 1s ease;
       min-height: 75px;
   }
+  .header-full-delta{
+    background-color: #20285d;
+  }
   .header-full img{
     display: block;
     margin: 7px auto;
@@ -438,6 +441,10 @@
   top: 600px;
   position: relative;
 }
+.red-box-area{
+  top: 355px;
+  position: relative;
+}
 .arrow-i{
   float: right;
 }
@@ -484,4 +491,123 @@
 }
 .color-code-6{
   background: rgb(83, 179, 243);
+}
+.slider-red-box{
+  background-color: #eea4a4;
+  border: 2px solid #c01111;
+  padding: 15px;
+  border-radius: 10px;
+}
+.slider-red-box a{
+  color: #131313
+}
+.slider-red-box a:hover{
+  text-decoration: none;
+}
+.red-box-area button{
+  text-transform: uppercase;
+  background-color: #444;
+  border: #2b2b2b;
+}
+.red-box-area button:hover{
+  text-transform: uppercase;
+  background-color: #686662;
+  border: #2b2b2b;
+  transition: .5s ease;
+}
+.header-text img{
+  float: left;
+  width: 8%;
+  display: inline-block;
+  margin: 13px auto;
+}
+.und-full{
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 98%;
+}
+.und-half{
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 48%;
+}
+.und-bord-marg{
+  background-color: #eea4a4;
+}
+.und-bord-marg p{
+  color: rgb(79, 75, 130);
+}
+.delta-body-full-left textarea, .body-full-right textarea {
+  background-color: #4b5fe77a;
+  border: solid 2px #20285d;
+  border-radius: 15px;
+  display: block;
+  width: 80%;
+  margin: 0px 10%;
+  padding: 3px 10px;
+  font-size: 20px;
+  color: #fff;
+  transform: scale(1);
+  transition: .5s ease;
+  height: 85px;
+}
+.delta-body-full-left textarea:hover, .body-full-left textarea:focus,{
+  transform: scale(1.5) !important;
+  transition: .5s ease;
+  width: 81%;
+  margin: 0 8%;
+}
+.delta-body-full-left h2, .delta-body-full-right h2{
+  color: #3e3682;
+  font-size: 44px;
+  padding: 0 50px;
+}
+.delta-body-full-left h3, .delta-body-full-right h3{
+  color: #3e3682;
+  text-align: center;
+  font-size: 23px;
+}
+.table-box-area {
+  top: 25px;
+  position: relative;
+}
+.table-box-area-left button{
+  text-transform: uppercase;
+  background-color: #999999;
+  border: #999999 1px solid;
+}
+.table-box-area-left button:hover{
+  background-color: #999999;
+  border: #2b2b2b 1px solid;
+  transition: .5s ease;
+}
+.table-box-area-right button{
+  text-transform: uppercase;
+  background-color: #e91f1f;
+  border: #e91f1f 1px solid;
+}
+.table-box-area-right button:hover{
+  background-color: #e91f1f;
+  border: #2b2b2b 1px solid;
+  transition: .5s ease;
+}
+.delta-body-full-right textarea, .body-full-right textarea {
+  background-color: #56f33b7a;
+  border: solid 2px #0b7014;
+  border-radius: 15px;
+  display: block;
+  width: 80%;
+  margin: 0px 10%;
+  padding: 3px 10px;
+  font-size: 20px;
+  color: #fff;
+  transform: scale(1);
+  transition: .5s ease;
+  height: 85px;
+}
+.delta-body-full-left textarea:hover, .body-full-left textarea:focus,{
+  transform: scale(1.5) !important;
+  transition: .5s ease;
+  width: 81%;
+  margin: 0 8%;
 }

@@ -18,7 +18,7 @@
 .chart span {
   margin: 0 1em;
   display: block;
-  background: rgba(209, 236, 250, 0.75);
+  background: rgba(16, 84, 119, 0.75);
   animation: draw 1s ease-in-out;
 }
 .chart span:before {
@@ -31,6 +31,10 @@
   text-align: center;
   content: attr(title);
   word-wrap: break-word;
+}
+
+.chart + h3{
+  color: rgba(35, 31, 222, 1);
 }
 
 @keyframes draw {
