@@ -39,6 +39,7 @@
     "Bootstrap-Confirmation": "*",
     "bootstrap-lightbox": "^0.7.0",
     "slick": "*",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "font-awesome": "Font-Awesome#v4.7.0"
   }
 }

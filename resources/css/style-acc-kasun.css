@@ -140,6 +140,19 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
+.under-border-1{
+    border: 1px solid #3a3939;
+    border-bottom: 5px solid #3a3939;
+    background-color: #ee6161; 
+    color: #1e1cb4;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: .5s ease;
+    display: block;
+    height: 75px;
+    padding: 20px 10px
+  }
+
 
 
 
