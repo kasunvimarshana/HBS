@@ -1,18 +1,34 @@
 @import url(style-acc.css);
 @import url(style-acc-kasun.css);
 
+
 body{
     font-family: 'Oswald', sans-serif; 
     background-image: url("../images/background.png");
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
 body .main-bg{
     font-family: 'Oswald', sans-serif; 
     background-image: url("../images/background-main.jpg");
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
+.bg-delta{
+    background-image: url("../images/delta-bg.png");
+    background-attachment: fixed;
+}
+.bg-rvo{
+    background-image: url("../images/rvo-bg.png");
+    background-attachment: fixed;
+}
+.main-bg-img{
+    background-image: url("../images/main.png");
+    background-attachment: fixed;
+}
+   
 /* custom scrollbar */
 ::-webkit-scrollbar
 {
@@ -231,6 +247,14 @@ label {
   height: 0;
 }
 
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -250,17 +274,12 @@ label {
     width: 14px;
     left: 4px;
     bottom: 3px;
+    background-color: white !important;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
-}
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -362,3 +381,185 @@ input:checked + .slider:before {
 .plan2-box-3{
     background: rgb(192, 82, 18);
 }
+
+	/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+	@media (max-width: 450px) {
+        .sl-01{margin-top: 125px;}.sl-05{margin-top: 47px;}.sl-09{margin-top: 127px;}.sl-10{margin-top: 103px;}.sl-31{margin-top: 145px !important;}.sl-32{margin-top: 125px !important;}.sl-33{margin-top: 113px !important;}
+
+
+        .logo-full-slider-6 {min-height: 100px;}.logo-full-slider-9 {min-height: 103px;}.logo-full-slider-10 {min-height: 95px;}
+		.logo-full h1 {
+			font-size: 48px;
+		}
+		.logo-full p, .btn-area p {
+			font-size: 21px;
+        }
+        .btn-area a {
+            padding: 10px 8px;
+        }
+        .mid-box {
+            margin: 10px 0px;
+        }
+        .content-block p {
+            font-size: 16px;
+        }
+    
+        .btn-area{
+            padding: 0 15px;
+        }
+        .pad-removals {
+            padding: 0 8px;
+        }
+        .form-property textarea {
+            height: 70px;
+        }
+        .form-property input, .form-property textarea {
+            font-size: 15px;
+        }
+        .white-area .tog-area p {
+            min-width: 220px;
+        }
+        .white-area .tog-area p {
+            min-width: 220px;
+            margin: 10px 0;
+            width: 220px;
+        }
+        .switch {
+            position: absolute;
+            margin-top: 12px;
+            right: 40px;
+        }
+        .btn-area a { 
+            font-size: 18px;
+        }
+        .pad-det {
+            padding: 13px 0;
+        }
+        .plan-box {
+            width: 100%;
+        }
+        .add-padding{
+            padding: 0 15px
+        }
+        .new-pad-removal{
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+        .adding-padding {
+            margin-top: 20px;
+        }
+        /* Dev lak styles */
+        .header-text h2{
+            text-align: left;
+            font-size: 25px;
+            margin-left: 117px;
+        }
+        .search-btn{
+            display: block;
+            width: 88%;
+            margin: 26px 25px;
+        }
+        .btn-1 {
+            font-size: 14px;
+            letter-spacing: 0.8px;
+        }
+        .text-center {
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 0.8px;
+            line-height: 25px;
+        }
+        .header-text img{
+            width: 38% !important;
+            margin-top: 23px;
+        }
+        .header-full img{
+        width: 64%;
+        }
+        .control-btn.outline{
+            display: none;
+        }
+        .body-full {
+            margin-top: 192px;
+        }
+        .body-full h2{
+            font-weight: bold;
+        }
+        .body-full h1{
+            font-size: 23px;
+        }
+        .new-block{
+            padding: 75px 15px;
+        }
+        .footer-mobile{
+            border-bottom: #20285d solid 15px;
+            padding-bottom: 30px;
+        }
+        .form-property input, .form-property textarea{
+            margin-bottom: 15px;
+        }
+        .content-area-1{
+         border-radius: 0em; 
+        }
+        .chat-user-add{
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .body-full-slidr-86{
+            margin-top: 218px;
+        }
+        .form-property input, .form-property textarea{
+            padding: 6px 12px;
+            font-size: 15px;
+        }
+        .white-area-slider-84{
+            padding: 9px 25px;
+            margin-bottom: 20px;
+        }
+        /* Dev lak end */
+        .header-text-new h2 {
+            text-align: left;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        .body-full-left textarea, .delta-body-full-right textarea, .body-full-right textarea{
+            width: 100%;
+            margin: 5px 0%;
+        }
+        .body-full-right{
+            margin-bottom: 30px;
+        }
+        .body-full-left{
+            margin-bottom: 20px;
+        }
+        .btn-pad {
+            padding: 15px 0px;
+        }
+        .btn-area-new {
+            padding: 0 0px;
+        }
+        .btn-area p {
+            font-size: 21px;
+            margin-top: 15px;
+        }
+        .line-end{
+            padding-bottom: 36px;
+        }
+
+	}              
+	/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+	@media (min-width: 451px) and (max-width: 768px) {
+			
+	}
+	/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+	@media (min-width: 768px) and (max-width: 991px) {
+		
+	}
+	/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+	@media (min-width: 992px) and (max-width: 1199px) {
+
+	}
+	/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+	@media (min-width: 1400px) {
+
+	}
+	/* ---------------------------------------------------------------------------------------------------------------------------------------- */

@@ -1,3 +1,6 @@
+.ajest-body-full {
+  margin-top: 80px !important;
+}
 .header-full{
     position: fixed;
     top: 0px;
@@ -610,4 +613,32 @@
   transition: .5s ease;
   width: 81%;
   margin: 0 8%;
+}
+.sliding-box{
+  background: #fff;
+  padding: 15px;
+  border: #131313 2px solid;
+  outline: #fff solid 10px;
+}
+.sliding-box-heading{
+  line-height: 28px;
+}
+.sliding-box h3{
+  font-size: 17px;
+  text-align: left;
+}
+.sliding-box span p{
+  font-size: 16px;;
+  text-align: center;
+  padding: 15px 40px;
+}
+.sliding-footer p{
+text-align: right
+}
+.title-mid-h2-new p{
+  text-align: center;
+}
+.demo-content p{
+  text-align: center;
+  padding: 25px 15px;
 }
